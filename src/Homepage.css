@@ -64,19 +64,16 @@ img{
 
 @media screen and (max-width: 850px) {
     .home-container{
+        height: 40vh;
         margin-top: 10%;
     }
 
     .home-sub-container h1{
-        font-size: 2.8rem;
+        font-size: 2rem;
     }
 
     .home-sub-container p{
-        font-size: 1.5rem;
-    }
-
-    img{
-        height: 60%;
+        font-size: 1rem;
     }
 
     .book-demo{
@@ -92,6 +89,7 @@ img{
     }
 
     .home-container{
+        height: 100vh;
         flex-direction: column;
         justify-content: center;
     }
