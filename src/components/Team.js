@@ -8,16 +8,15 @@ const Team = () => {
 
       <div className='about-us-content'>
           <h1 className='about-us-text'>About the Organization</h1>
-          <p>Zealous Academy of Career Training is most desirable young and
-          enthusiastic team of Skill set training company focus on technical part, we are
-          known for our practical approach towards trainings that enable students to gain
-          real-time exposure on competitive technologies and meet the industry
-          requirement
-          Our Trainings are focused on perfect improvement of technical skills set
-          for entry level recruits in organizations and working professional. Training
-          classes are sure to help the trainee with COMPLETE PRACTICAL TRAINING
-          and Real time methodologies which lead them to get placed, our previous
-          candidates are best example of this fact</p>
+          <p>&#x2022; Zealous Academy of Career Training is most desirable young and
+          enthusiastic team of Skill set training company focus on technical part.<br/>
+          &#x2022; We are known for our practical approach towards trainings that enable students to gain
+          real-time exposure on competitive technologies and meet the industry requirement.<br/>
+          &#x2022; Our Trainings are focused on perfect improvement of technical skills set
+          for entry level recruits in organizations and working professional.<br/>
+          &#x2022; Training classes are sure to help the trainee with complete practical training
+          and real time methodologies which lead them to get placed, our previous
+          candidates are best example of this fact.</p>
       </div>
 
       <div className='about-team'>

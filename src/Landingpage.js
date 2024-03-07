@@ -1,15 +1,15 @@
 import React from 'react'
 import Homepage from './components/Homepage'
-import ImageCarousel from './components/Carousel'
 import Team from './components/Team'
+import Offerings from './components/Offerings'
 
 const Landingpage = () => {
 
   return (
     <div>
       <Homepage/>
-      <ImageCarousel/>
       <Team/>
+      <Offerings/>
     </div>
   )
 }

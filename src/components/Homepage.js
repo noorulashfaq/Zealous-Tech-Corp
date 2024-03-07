@@ -11,7 +11,7 @@ const Homepage = () => {
 
 
         <div className='home-sub-container'>
-            <h1>Crafting innovative <span style={{color:"#fc7a46"}}>learning solutions</span> that ignite your potential</h1>
+            <h1>Crafting innovative <span style={{color:"#fc7a46"}}>learning solutions</span> that ignite your potential.</h1>
             <p>Learn | Practice | Implement | Career</p>
             <button className="book-demo">Book now</button>
         </div>
