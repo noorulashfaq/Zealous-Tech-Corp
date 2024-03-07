@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.about-main{
+    background-color: #0c83c8;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.about-us-content{
+    margin-top: 1.5%;
+    padding: 5%;
+    width: 40%;
+    color: white;
+    text-align: center;
+}
+
+.about-us-content p{
+    margin-top: 5%;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.about-title{
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+    margin: 3%;
+}
+
+.about-team{
+    margin-top: 5%;
+    margin-left: -10%;
+    width: 50%;
+}
+
+.about-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    font-weight: bolder;
+}
+
+.inner-container{
+    margin-left: 0px;
+    width: 40%;
+    height: 70%;
+    color: #0c83c8;
+    background-color: white;
+    border-radius: 10%;
+    margin: 3%;
+    margin-left: 0px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    box-shadow:  5px 5px 10px,
+                -5px -5px 10px black;
+}
+
+.inner-container-subset{
+    width: 30%;
+}
+
+.inner-container-2{
+    width: 100%;
+    color: #0c83c8;
+    background-color: white;
+    box-shadow:  5px 5px 10px,
+                -5px -5px 10px black;
+    border-radius: 10%;
+    padding: 2%;
+    margin: 10%;
+    margin-bottom: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    place-items: center;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.inner-container h2, .inner-container-2 h2{
+    color: #fc7a46;
+}
+
+.inner-container img{
+    height: 60%;
+    width: fit-content;
+    border: 1px #0c83c8;
+    border-radius: 50%;
+}
+
+.inner-container-2 img{
+    height: 50%;
+    border: 1px #0c83c8;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1780px) {
+    .inner-container{
+        height: 65%;
+    }
+    .inner-container-subset{
+        height: 60%;
+    }
+    .inner-container img{
+        width: 50%;
+        height: 60%;
+    }
+    .inner-container-2{
+        height: 50%;
+    }
+    .about-container img{
+        /* width: 50%; */
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .about-us-content p{
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .about-main{
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us-content{
+        margin: 0;
+        margin-right: 6%;
+        margin-top: 10%;
+        width: 80%;
+    }
+
+    .about-us-content p{
+        text-align: justify;
+    }
+
+    .about-team{
+        margin-top: 0;
+        width: 90%;
+    }
+
+    .about-title{
+        width: 105%;
+    }
+
+    .about-container{
+        width: 100%;
+        height: 100%;
+    }
+
+    .inner-container{
+        height: 100%;
+        display: flex;
+        place-self: center;
+    }
+
+    .inner-container-subset{
+        flex-direction: column;
+        height: 70%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .about-container{
+        margin-left: 10%;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .about-title{
+        font-size: 1.5em;
+    }
+
+    .inner-container{
+        width: 80%;
+        text-align: center;
+    }
+
+    .inner-container p{
+        font-size: 1em;
+    }
+
+    .inner-container img{
+        width: 40%;
+    }
+
+    .inner-container-subset{
+        width: 80%;
+    }
+
+    .inner-container-2 img{
+        width: 40%;
+    }
+}

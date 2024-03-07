@@ -21,7 +21,7 @@
 }
 
 .home-sub-container h1{
-    color: #1976d2;
+    color: #0c83c8;
     font-size: 4rem;
     text-align: left;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -31,7 +31,7 @@
 
 
 .home-sub-container p{
-    color: #1976d2;
+    color: #0c83c8;
     margin-top: 2%;
     margin-bottom: 2%;
     font-size: 200%;
@@ -46,13 +46,13 @@
     font-size: 1.5rem;
     font-weight: bolder;
     background-color: transparent;
-    border: 1px orange solid;
-    color: orange;
+    border: 1px #fc7a46 solid;
+    color: #fc7a46;
     transition: 0.5s;
 }
 
 .book-demo:hover{
-    background-color: orange;
+    background-color: #fc7a46;
     color: white;
 }
 
@@ -61,6 +61,52 @@ img{
     width: 40%;
     height: 70%;
 }
+
+@media screen and (max-width: 1120px) {
+    .home-sub-container p{
+        font-size: 1em;
+    }
+
+    .book-demo{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1030px){
+    .home-container{
+        height: 100vh;
+    }
+
+    .home-sub-container h1{
+        font-size: 2.5em;
+    }
+    
+    .book-demo{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .book-demo{
+        width: 40%;
+    }
+    .home-container{
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .book-demo{
+        width: 40%;
+    }
+    .home-sub-container h1{
+        font-size: 2.5em;
+    }
+    .book-demo{
+        margin-top: 5%;
+    }
+}
+
 
 @media screen and (max-width: 850px) {
     .home-container{
@@ -78,6 +124,24 @@ img{
 
     .book-demo{
         width: 70%;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .home-sub-container h1{
+        font-size: 1.5em;
+    }
+
+    .book-demo{
+        border-radius: 10px;
+        font-size: 1em;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .book-demo{
+        width: 50%;
     }
 }
 
