@@ -4,7 +4,7 @@ import HeroImg from '../Images/HeroImg.png'
 
 const Homepage = () => {
   return (
-    <div className='home-container'>
+    <div id="home-section" className='home-container'>
 
 
           <img src={HeroImg} alt="Zealous Tech Corp"/>

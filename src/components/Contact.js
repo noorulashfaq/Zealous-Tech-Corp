@@ -5,11 +5,39 @@ import PlaceIcon from '@mui/icons-material/Place';
 import PhoneIcon from '@mui/icons-material/Phone';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import emailjs from 'emailjs-com';
+import { useState } from 'react';
 
 function Contact() {
+
+    const [formData, setFormData] = useState({
+      name: '',
+      email: '',
+      phone: '',
+      message: ''
+    });
+  
+    const handleChange = (e) => {
+      setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+  
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      console.log(formData)
+      emailjs.send('service_r95amrr', 'template_dlxisr9', { ...formData, to_email: 'noorulashfaq786@gmail.com' }, '4C6XK5WEB_pj_W4Y1')
+        .then((response) => {
+          console.log('Email sent successfully:', response);
+          alert('Email sent successfully!');
+        }, (error) => {
+          console.error('Error sending email:', error);
+          alert('Failed to send email. Please try again later.');
+        });
+    };
+  
+
   return (
     
-    <div className="container">
+    <div id="contact-section" className="container">
       
       <div className='linkwithus'>
         
@@ -21,30 +49,37 @@ function Contact() {
 <h3 className='heading'>Connect with us</h3>
   {/* <InputLabel htmlFor="username">Username</InputLabel> */}
   {/* <TextField id="username" variant='outlined' label="Username"/> */}
-  <TextField label="Name"  InputLabelProps={{
-        style: { color: 'white' } // Change 'red' to your desired font color
-      }}
-      variant='standard' 
-      inputProps={{ style: { color: 'white' } }}
-      required
-      sx={{
-        '& .MuiOutlinedInput-root': {
-          '& fieldset': {
-            borderColor: 'orange', // Change outline color
-          },
-        },
-      }}
+      <TextField label="Name"  
+          InputLabelProps={{
+            style: { color: 'white' } // Change 'red' to your desired font color
+          }}
+          name='name'
+          onChange={handleChange}
+          variant='standard' 
+          inputProps={{ style: { color: 'white' } }}
+          required
+          sx={{
+            '& .MuiOutlinedInput-root': {
+              '& fieldset': {
+                borderColor: 'orange', // Change outline color
+              },
+            },
+          }}
       /><br></br>
         <TextField label="Mail"
         InputLabelProps={{
           style: { color: 'white' } // Change 'red' to your desired font color
-        }} 
+        }}
+        name='email'
+        onChange={handleChange}
         variant='standard' 
         inputProps={{ style: { color: 'white' } }}
         required /><br></br>
 
         <TextField label="Phone" 
-        variant='standard' 
+        variant='standard'
+        name='phone'
+        onChange={handleChange}
         required
         inputProps={{ style: { color: 'white' } }}
         InputLabelProps={{
@@ -60,6 +95,8 @@ function Contact() {
         <TextField
           id="comment"
           label="Your Comment"
+          name='message'
+          onChange={handleChange}
           multiline
           rows={4}
           fullWidth
@@ -73,6 +110,7 @@ function Contact() {
       </Grid>
     </Grid><br></br>
     <Button variant="contained" 
+    onClick={handleSubmit}
      sx={{
       color: 'white',
       backgroundColor: '#fc7a46', // Green color 

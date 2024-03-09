@@ -4,7 +4,7 @@ import Employee1 from '../Images/Employee1.png'
 const Team = () => {
   return (
 
-    <div className='about-main'>
+    <div id="about-section" className='about-main'>
 
       <div className='about-us-content'>
           <h1 className='about-us-text'>About the Organization</h1>

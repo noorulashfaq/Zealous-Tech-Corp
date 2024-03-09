@@ -18,7 +18,7 @@ const bull = (
 
 export default function Services() {
   return (
-      <div className='services'>
+      <div id="services-section" className='services'>
               <h1 className='services-text'>Services we offer</h1>
 
               <div className='services-main'>
