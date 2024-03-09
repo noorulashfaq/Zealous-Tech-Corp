@@ -9,6 +9,7 @@
     background-color: #0c83c8;
     height: 100vh;
     padding: 10%;
+    animation: fadeIn ease-in-out 0.5s;
 }
 
 .services-text{
@@ -81,3 +82,14 @@
         height: 200vh;
     }
 }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+  }

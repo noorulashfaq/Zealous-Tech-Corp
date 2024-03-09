@@ -9,6 +9,7 @@
     height: 100%;
     display: flex;
     flex-direction: column; /* Change to column for mobile */
+    animation: fadeIn ease-in-out 0.5s;
   }
   
   .heading {
@@ -150,4 +151,15 @@
     .tablecontent{
       width: 90%;
     }
+  }
+
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
   }
