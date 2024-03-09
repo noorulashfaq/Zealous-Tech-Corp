@@ -34,7 +34,7 @@
     color: #0c83c8;
     margin-top: 2%;
     margin-bottom: 2%;
-    font-size: 200%;
+    font-size: 1.5rem;
     display: flex;
     text-align: left;
 }
@@ -47,7 +47,7 @@
     font-size: 1.5rem;
     font-weight: bolder;
     background-color: transparent;
-    border: 1px #fc7a46 solid;
+    border: 1px #    solid;
     color: #fc7a46;
     transition: 0.5s;
 }

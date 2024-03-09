@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.technologies-box{
+    height: 50vh;
+    padding: 10%;
+}
+
+.technologies-box h1{
+    text-align: center;
+    margin-top: -5%;
+    margin-bottom: 7%;
+}
+
+.grid-element div{
+    height: 100px;
+    background-color: white;
+    color: #0c83c8;
+    border: 2px solid #fc7a46;
+    padding: 2%;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.grid-element div:hover{
+    display: block;
+    color: white;
+    background-color: #fc7a46;
+}
+
+@media screen and (max-width: 1200px) {
+    .grid-element p{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .technologies-box{
+        height: 70vh;
+    }
+    .grid-element p{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .grid-element p{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .grid-element p{
+        font-size: 0.8em;
+    }
+}

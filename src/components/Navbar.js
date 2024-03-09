@@ -18,7 +18,7 @@ const Navbar = () => {
       <AppBar position='fixed'>
         <Toolbar style={{backgroundColor:"white"}}>
 
-            <img className='img-zealous' href='/' src={Zealous} style={{width:"20%", marginTop:"5px",marginBottom:"5px"}} alt="Zealous logo"/>
+            <img className='img-zealous' href='/' src={Zealous} style={{width:"15%", marginTop:"5px",marginBottom:"5px"}} alt="Zealous logo"/>
 
             <div className={isOpen ? "nav-menu open" : "nav-menu"} id='navigation-bar' >
                 <a href='/'><button>Home</button></a>
